@@ -1,0 +1,19 @@
+{
+  "name": "leaflet-example",
+  "version": "0.0.0",
+  "description": "Trying the Seth tutorial",
+  "main": "app.js",
+  "scripts": {
+    "start": "beefy app.js:bundle.js --live",
+    "bundle": "browserify app.js -o bundle.js"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "leaflet": "~0.7.2"
+  },
+  "devDependencies": {
+    "browserify": "~4.1.5",
+    "beefy": "~1.1.0"
+  }
+}

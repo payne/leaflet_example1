@@ -1,0 +1,25 @@
+
+<!DOCTYPEhtml>
+<html>
+  <head>
+<title>Simple Leaflet Example</title>
+<link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css"/>
+<style>
+html, body { height: 100%; margin: 0px; } #map { height: 100%; }
+</style>
+  </head>
+  <body>
+<div id="map"></div>
+<script src="http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js"></script>
+<script>
+var attribution = 'Map data &copy; <a href="http://openstreetmap.org">Open\ http://mapbox.com/ ￼ StreetMap</a>contributors,<ahref="http://creativecommons.org/licenses/by-sa\ /2.0/">CC-BY-SA</a>,Tilesby<ahref="http://mapbox.com">MapBox</a>';
+    var map = L.map('map').setView([48.98337, -123.05855], 13);
+    L.tileLayer('http://{s}.tiles.mapbox.com/v3/mattpayneorg.iafh16bm/{z}/{x}/{y}.png', {
+      attribution: attribution,
+      maxZoom: 18
+    }).addTo(map);
+var marker = L.marker([48.98337, -123.05855]).addTo(map); var markerHtml = 'This place is weird'; marker.bindPopup(markerHtml);
+</script>
+  </body>
+</html>
+
